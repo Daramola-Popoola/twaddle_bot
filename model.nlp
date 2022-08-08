@@ -1,0 +1,2049 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "forceNER": "true",
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "hey": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "hello": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "hi": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "are,how,you": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "anyon,is,there": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "day,good": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "is,up,what": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "go,how,is,it": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "atfernoon,good": {
+            "intent": "greeting",
+            "domain": "default"
+          },
+          "bye": {
+            "intent": "goodbye",
+            "domain": "default"
+          },
+          "later,see,you": {
+            "intent": "goodbye",
+            "domain": "default"
+          },
+          "goodby": {
+            "intent": "goodbye",
+            "domain": "default"
+          },
+          "see,ya": {
+            "intent": "goodbye",
+            "domain": "default"
+          },
+          "am,i,leav": {
+            "intent": "goodbye",
+            "domain": "default"
+          },
+          "adio": {
+            "intent": "goodbye",
+            "domain": "default"
+          },
+          "bye,chat,nice,to,you": {
+            "intent": "goodbye",
+            "domain": "default"
+          },
+          "ok,thank,you": {
+            "intent": "thanks",
+            "domain": "default"
+          },
+          "thank": {
+            "intent": "thanks",
+            "domain": "default"
+          },
+          "thank,you": {
+            "intent": "thanks",
+            "domain": "default"
+          },
+          "help,is,that": {
+            "intent": "thanks",
+            "domain": "default"
+          },
+          "great": {
+            "intent": "thanks",
+            "domain": "default"
+          },
+          "are,hour,open,what,you": {
+            "intent": "hours",
+            "domain": "default"
+          },
+          "are,open,today,you": {
+            "intent": "hours",
+            "domain": "default"
+          },
+          "is,schedul,the,what": {
+            "intent": "hours",
+            "domain": "default"
+          },
+          "are,hour,what,your": {
+            "intent": "hours",
+            "domain": "default"
+          },
+          "are,open,when,you": {
+            "intent": "hours",
+            "domain": "default"
+          },
+          "card,credit,how,my,renew,to": {
+            "intent": "cards",
+            "domain": "default"
+          },
+          "card,debit,how,my,renew,to": {
+            "intent": "cards",
+            "domain": "default"
+          },
+          "applic,card,debit,for": {
+            "intent": "cards",
+            "domain": "default"
+          },
+          "applic,card,credit,for": {
+            "intent": "cards",
+            "domain": "default"
+          },
+          "appli,card,debit,for,how,to": {
+            "intent": "cards",
+            "domain": "default"
+          },
+          "appli,card,credit,for,how,to": {
+            "intent": "cards",
+            "domain": "default"
+          },
+          "card,credit,get,process,to": {
+            "intent": "cards",
+            "domain": "default"
+          },
+          "card,debit,get,process,to": {
+            "intent": "cards",
+            "domain": "default"
+          },
+          "stock": {
+            "intent": "stocks",
+            "domain": "default"
+          },
+          "how,in,invest,stock,to": {
+            "intent": "stocks",
+            "domain": "default"
+          },
+          "is,of,rate,stock,the,what": {
+            "intent": "stocks",
+            "domain": "default"
+          },
+          "how,is,market,stock,the": {
+            "intent": "stocks",
+            "domain": "default"
+          },
+          "get,inform,relat,stock,to,where": {
+            "intent": "stocks",
+            "domain": "default"
+          },
+          "how,is,market,the": {
+            "intent": "stocks",
+            "domain": "default"
+          },
+          "a,can,get,hous,i,loan": {
+            "intent": "loans",
+            "domain": "default"
+          },
+          "a,can,get,i,loan,person": {
+            "intent": "loans",
+            "domain": "default"
+          },
+          "a,can,car,get,i,loan": {
+            "intent": "loans",
+            "domain": "default"
+          },
+          "a,can,get,home,i,loan": {
+            "intent": "loans",
+            "domain": "default"
+          },
+          "a,get,how,loan,to,vehicl": {
+            "intent": "loans",
+            "domain": "default"
+          },
+          "a,can,get,how,i,loan,person": {
+            "intent": "loans",
+            "domain": "default"
+          },
+          "a,car,get,how,loan,to": {
+            "intent": "loans",
+            "domain": "default"
+          },
+          "doe,how,loan,these,work": {
+            "intent": "loans",
+            "domain": "default"
+          },
+          "do,me,understand,you": {
+            "intent": "understand",
+            "domain": "default"
+          },
+          "i,know,mean,what": {
+            "intent": "understand",
+            "domain": "default"
+          },
+          "do,get,it,you": {
+            "intent": "understand",
+            "domain": "default"
+          },
+          "understood": {
+            "intent": "understand",
+            "domain": "default"
+          },
+          "do,get,me,you": {
+            "intent": "understand",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "greeting": "default",
+          "goodbye": "default",
+          "thanks": "default",
+          "hours": "default",
+          "cards": "default",
+          "stocks": "default",
+          "loans": "default",
+          "understand": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "Hey",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hello",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hi",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "How are you",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "Is anyone there",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "Good day",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "What's up",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "How is it going",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "good atfernoon",
+            "intent": "greeting"
+          },
+          {
+            "domain": "default",
+            "utterance": "Bye",
+            "intent": "goodbye"
+          },
+          {
+            "domain": "default",
+            "utterance": "See you later",
+            "intent": "goodbye"
+          },
+          {
+            "domain": "default",
+            "utterance": "Goodbye",
+            "intent": "goodbye"
+          },
+          {
+            "domain": "default",
+            "utterance": "See ya",
+            "intent": "goodbye"
+          },
+          {
+            "domain": "default",
+            "utterance": "I am leaving",
+            "intent": "goodbye"
+          },
+          {
+            "domain": "default",
+            "utterance": "Adios",
+            "intent": "goodbye"
+          },
+          {
+            "domain": "default",
+            "utterance": "Nice chatting to you, bye",
+            "intent": "goodbye"
+          },
+          {
+            "domain": "default",
+            "utterance": "OK thank you",
+            "intent": "thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "Thanks",
+            "intent": "thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "Thank you",
+            "intent": "thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "That's helpful",
+            "intent": "thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "Great",
+            "intent": "thanks"
+          },
+          {
+            "domain": "default",
+            "utterance": "What hours are you open",
+            "intent": "hours"
+          },
+          {
+            "domain": "default",
+            "utterance": "Are you open today",
+            "intent": "hours"
+          },
+          {
+            "domain": "default",
+            "utterance": "what is the schedule",
+            "intent": "hours"
+          },
+          {
+            "domain": "default",
+            "utterance": "What are your hours",
+            "intent": "hours"
+          },
+          {
+            "domain": "default",
+            "utterance": "When are you open",
+            "intent": "hours"
+          },
+          {
+            "domain": "default",
+            "utterance": "How to renew my credit card",
+            "intent": "cards"
+          },
+          {
+            "domain": "default",
+            "utterance": "How to renew my debit card",
+            "intent": "cards"
+          },
+          {
+            "domain": "default",
+            "utterance": "Application for debit card",
+            "intent": "cards"
+          },
+          {
+            "domain": "default",
+            "utterance": "Application for credit card",
+            "intent": "cards"
+          },
+          {
+            "domain": "default",
+            "utterance": "How to apply for debit card",
+            "intent": "cards"
+          },
+          {
+            "domain": "default",
+            "utterance": "How to apply for credit card",
+            "intent": "cards"
+          },
+          {
+            "domain": "default",
+            "utterance": "Process to get credit card",
+            "intent": "cards"
+          },
+          {
+            "domain": "default",
+            "utterance": "Process to get debit card",
+            "intent": "cards"
+          },
+          {
+            "domain": "default",
+            "utterance": "stocks",
+            "intent": "stocks"
+          },
+          {
+            "domain": "default",
+            "utterance": "How to invest in stocks",
+            "intent": "stocks"
+          },
+          {
+            "domain": "default",
+            "utterance": "What is the rate of stocks",
+            "intent": "stocks"
+          },
+          {
+            "domain": "default",
+            "utterance": "How is the stock market",
+            "intent": "stocks"
+          },
+          {
+            "domain": "default",
+            "utterance": "Where to get information related to stocks",
+            "intent": "stocks"
+          },
+          {
+            "domain": "default",
+            "utterance": "How is the market",
+            "intent": "stocks"
+          },
+          {
+            "domain": "default",
+            "utterance": "Can I get a house loan",
+            "intent": "loans"
+          },
+          {
+            "domain": "default",
+            "utterance": "Can I get a personal loan",
+            "intent": "loans"
+          },
+          {
+            "domain": "default",
+            "utterance": "Can I get a car loan",
+            "intent": "loans"
+          },
+          {
+            "domain": "default",
+            "utterance": "Can I get a home loan",
+            "intent": "loans"
+          },
+          {
+            "domain": "default",
+            "utterance": "How to get a vehicle loan",
+            "intent": "loans"
+          },
+          {
+            "domain": "default",
+            "utterance": "How can I get a personal loan",
+            "intent": "loans"
+          },
+          {
+            "domain": "default",
+            "utterance": "How to get a car loan",
+            "intent": "loans"
+          },
+          {
+            "domain": "default",
+            "utterance": "How does these loans work",
+            "intent": "loans"
+          },
+          {
+            "domain": "default",
+            "utterance": "Do you understand me",
+            "intent": "understand"
+          },
+          {
+            "domain": "default",
+            "utterance": "Know what I mean",
+            "intent": "understand"
+          },
+          {
+            "domain": "default",
+            "utterance": "Do you get it",
+            "intent": "understand"
+          },
+          {
+            "domain": "default",
+            "utterance": "Understood",
+            "intent": "understand"
+          },
+          {
+            "domain": "default",
+            "utterance": "Do you get me",
+            "intent": "understand"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "hey": 1,
+              "hello": 1,
+              "hi": 1,
+              "how": 1,
+              "are": 1,
+              "you": 1,
+              "is": 1,
+              "anyon": 1,
+              "there": 1,
+              "good": 1,
+              "day": 1,
+              "what": 1,
+              "up": 1,
+              "it": 1,
+              "go": 1,
+              "atfernoon": 1,
+              "bye": 1,
+              "see": 1,
+              "later": 1,
+              "goodby": 1,
+              "ya": 1,
+              "i": 1,
+              "am": 1,
+              "leav": 1,
+              "adio": 1,
+              "nice": 1,
+              "chat": 1,
+              "to": 1,
+              "ok": 1,
+              "thank": 1,
+              "that": 1,
+              "help": 1,
+              "great": 1,
+              "hour": 1,
+              "open": 1,
+              "today": 1,
+              "the": 1,
+              "schedul": 1,
+              "your": 1,
+              "when": 1,
+              "renew": 1,
+              "my": 1,
+              "credit": 1,
+              "card": 1,
+              "debit": 1,
+              "applic": 1,
+              "for": 1,
+              "appli": 1,
+              "process": 1,
+              "get": 1,
+              "stock": 1,
+              "invest": 1,
+              "in": 1,
+              "rate": 1,
+              "of": 1,
+              "market": 1,
+              "where": 1,
+              "inform": 1,
+              "relat": 1,
+              "can": 1,
+              "a": 1,
+              "hous": 1,
+              "loan": 1,
+              "person": 1,
+              "car": 1,
+              "home": 1,
+              "vehicl": 1,
+              "doe": 1,
+              "these": 1,
+              "work": 1,
+              "do": 1,
+              "understand": 1,
+              "me": 1,
+              "know": 1,
+              "mean": 1,
+              "understood": 1
+            },
+            "intents": {
+              "greeting": 1,
+              "goodbye": 1,
+              "thanks": 1,
+              "hours": 1,
+              "cards": 1,
+              "stocks": 1,
+              "loans": 1,
+              "understand": 1
+            },
+            "intentFeatures": {
+              "greeting": {
+                "hey": 1,
+                "hello": 1,
+                "hi": 1,
+                "how": 1,
+                "are": 1,
+                "you": 1,
+                "is": 1,
+                "anyon": 1,
+                "there": 1,
+                "good": 1,
+                "day": 1,
+                "what": 1,
+                "up": 1,
+                "it": 1,
+                "go": 1,
+                "atfernoon": 1
+              },
+              "goodbye": {
+                "bye": 1,
+                "see": 1,
+                "you": 1,
+                "later": 1,
+                "goodby": 1,
+                "ya": 1,
+                "i": 1,
+                "am": 1,
+                "leav": 1,
+                "adio": 1,
+                "nice": 1,
+                "chat": 1,
+                "to": 1
+              },
+              "thanks": {
+                "ok": 1,
+                "thank": 1,
+                "you": 1,
+                "that": 1,
+                "is": 1,
+                "help": 1,
+                "great": 1
+              },
+              "hours": {
+                "what": 1,
+                "hour": 1,
+                "are": 1,
+                "you": 1,
+                "open": 1,
+                "today": 1,
+                "is": 1,
+                "the": 1,
+                "schedul": 1,
+                "your": 1,
+                "when": 1
+              },
+              "cards": {
+                "how": 1,
+                "to": 1,
+                "renew": 1,
+                "my": 1,
+                "credit": 1,
+                "card": 1,
+                "debit": 1,
+                "applic": 1,
+                "for": 1,
+                "appli": 1,
+                "process": 1,
+                "get": 1
+              },
+              "stocks": {
+                "stock": 1,
+                "how": 1,
+                "to": 1,
+                "invest": 1,
+                "in": 1,
+                "what": 1,
+                "is": 1,
+                "the": 1,
+                "rate": 1,
+                "of": 1,
+                "market": 1,
+                "where": 1,
+                "get": 1,
+                "inform": 1,
+                "relat": 1
+              },
+              "loans": {
+                "can": 1,
+                "i": 1,
+                "get": 1,
+                "a": 1,
+                "hous": 1,
+                "loan": 1,
+                "person": 1,
+                "car": 1,
+                "home": 1,
+                "how": 1,
+                "to": 1,
+                "vehicl": 1,
+                "doe": 1,
+                "these": 1,
+                "work": 1
+              },
+              "understand": {
+                "do": 1,
+                "you": 1,
+                "understand": 1,
+                "me": 1,
+                "know": 1,
+                "what": 1,
+                "i": 1,
+                "mean": 1,
+                "get": 1,
+                "it": 1,
+                "understood": 1
+              }
+            },
+            "featuresToIntent": {
+              "hey": [
+                "greeting"
+              ],
+              "hello": [
+                "greeting"
+              ],
+              "hi": [
+                "greeting"
+              ],
+              "how": [
+                "greeting",
+                "cards",
+                "stocks",
+                "loans"
+              ],
+              "are": [
+                "greeting",
+                "hours"
+              ],
+              "you": [
+                "greeting",
+                "goodbye",
+                "thanks",
+                "hours",
+                "understand"
+              ],
+              "is": [
+                "greeting",
+                "thanks",
+                "hours",
+                "stocks"
+              ],
+              "anyon": [
+                "greeting"
+              ],
+              "there": [
+                "greeting"
+              ],
+              "good": [
+                "greeting"
+              ],
+              "day": [
+                "greeting"
+              ],
+              "what": [
+                "greeting",
+                "hours",
+                "stocks",
+                "understand"
+              ],
+              "up": [
+                "greeting"
+              ],
+              "it": [
+                "greeting",
+                "understand"
+              ],
+              "go": [
+                "greeting"
+              ],
+              "atfernoon": [
+                "greeting"
+              ],
+              "bye": [
+                "goodbye"
+              ],
+              "see": [
+                "goodbye"
+              ],
+              "later": [
+                "goodbye"
+              ],
+              "goodby": [
+                "goodbye"
+              ],
+              "ya": [
+                "goodbye"
+              ],
+              "i": [
+                "goodbye",
+                "loans",
+                "understand"
+              ],
+              "am": [
+                "goodbye"
+              ],
+              "leav": [
+                "goodbye"
+              ],
+              "adio": [
+                "goodbye"
+              ],
+              "nice": [
+                "goodbye"
+              ],
+              "chat": [
+                "goodbye"
+              ],
+              "to": [
+                "goodbye",
+                "cards",
+                "stocks",
+                "loans"
+              ],
+              "ok": [
+                "thanks"
+              ],
+              "thank": [
+                "thanks"
+              ],
+              "that": [
+                "thanks"
+              ],
+              "help": [
+                "thanks"
+              ],
+              "great": [
+                "thanks"
+              ],
+              "hour": [
+                "hours"
+              ],
+              "open": [
+                "hours"
+              ],
+              "today": [
+                "hours"
+              ],
+              "the": [
+                "hours",
+                "stocks"
+              ],
+              "schedul": [
+                "hours"
+              ],
+              "your": [
+                "hours"
+              ],
+              "when": [
+                "hours"
+              ],
+              "renew": [
+                "cards"
+              ],
+              "my": [
+                "cards"
+              ],
+              "credit": [
+                "cards"
+              ],
+              "card": [
+                "cards"
+              ],
+              "debit": [
+                "cards"
+              ],
+              "applic": [
+                "cards"
+              ],
+              "for": [
+                "cards"
+              ],
+              "appli": [
+                "cards"
+              ],
+              "process": [
+                "cards"
+              ],
+              "get": [
+                "cards",
+                "stocks",
+                "loans",
+                "understand"
+              ],
+              "stock": [
+                "stocks"
+              ],
+              "invest": [
+                "stocks"
+              ],
+              "in": [
+                "stocks"
+              ],
+              "rate": [
+                "stocks"
+              ],
+              "of": [
+                "stocks"
+              ],
+              "market": [
+                "stocks"
+              ],
+              "where": [
+                "stocks"
+              ],
+              "inform": [
+                "stocks"
+              ],
+              "relat": [
+                "stocks"
+              ],
+              "can": [
+                "loans"
+              ],
+              "a": [
+                "loans"
+              ],
+              "hous": [
+                "loans"
+              ],
+              "loan": [
+                "loans"
+              ],
+              "person": [
+                "loans"
+              ],
+              "car": [
+                "loans"
+              ],
+              "home": [
+                "loans"
+              ],
+              "vehicl": [
+                "loans"
+              ],
+              "doe": [
+                "loans"
+              ],
+              "these": [
+                "loans"
+              ],
+              "work": [
+                "loans"
+              ],
+              "do": [
+                "understand"
+              ],
+              "understand": [
+                "understand"
+              ],
+              "me": [
+                "understand"
+              ],
+              "know": [
+                "understand"
+              ],
+              "mean": [
+                "understand"
+              ],
+              "understood": [
+                "understand"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "hey",
+                "hello",
+                "hi",
+                "how",
+                "are",
+                "you",
+                "is",
+                "anyon",
+                "there",
+                "good",
+                "day",
+                "what",
+                "up",
+                "it",
+                "go",
+                "atfernoon",
+                "bye",
+                "see",
+                "later",
+                "goodby",
+                "ya",
+                "i",
+                "am",
+                "leav",
+                "adio",
+                "nice",
+                "chat",
+                "to",
+                "ok",
+                "thank",
+                "that",
+                "help",
+                "great",
+                "hour",
+                "open",
+                "today",
+                "the",
+                "schedul",
+                "your",
+                "when",
+                "renew",
+                "my",
+                "credit",
+                "card",
+                "debit",
+                "applic",
+                "for",
+                "appli",
+                "process",
+                "get",
+                "stock",
+                "invest",
+                "in",
+                "rate",
+                "of",
+                "market",
+                "where",
+                "inform",
+                "relat",
+                "can",
+                "a",
+                "hous",
+                "loan",
+                "person",
+                "car",
+                "home",
+                "vehicl",
+                "doe",
+                "these",
+                "work",
+                "do",
+                "understand",
+                "me",
+                "know",
+                "mean",
+                "understood"
+              ],
+              "intents": [
+                "greeting",
+                "goodbye",
+                "thanks",
+                "hours",
+                "cards",
+                "stocks",
+                "loans",
+                "understand"
+              ],
+              "perceptrons": [
+                [
+                  10.542611122131348,
+                  10.542611122131348,
+                  10.542611122131348,
+                  5.476345539093018,
+                  4.301398277282715,
+                  0.7648624777793884,
+                  2.840367555618286,
+                  3.8511226177215576,
+                  3.8511226177215576,
+                  7.028405666351318,
+                  3.514207601547241,
+                  0.16167473793029785,
+                  7.540569305419922,
+                  0.3010028898715973,
+                  1.9248974323272705,
+                  3.5142078399658203,
+                  -3.780426025390625,
+                  -2.9568023681640625,
+                  -1.5511606931686401,
+                  -3.763198137283325,
+                  -1.399123191833496,
+                  -2.402726650238037,
+                  -1.1043752431869507,
+                  -1.1043752431869507,
+                  -3.757551431655884,
+                  -0.28468969464302063,
+                  -0.28468969464302063,
+                  -3.5550267696380615,
+                  -0.746813952922821,
+                  -4.507960796356201,
+                  -3.389087438583374,
+                  -3.389087438583374,
+                  -3.7485928535461426,
+                  -4.517906665802002,
+                  -6.1494526863098145,
+                  -2.659907579421997,
+                  -7.083715438842773,
+                  -1.6127821207046509,
+                  -3.688265562057495,
+                  -2.659907579421997,
+                  -1.0795403718948364,
+                  -1.0795403718948364,
+                  -1.1684505939483643,
+                  -2.3368873596191406,
+                  -1.1684505939483643,
+                  -0.3487302362918854,
+                  -1.2573615312576294,
+                  -0.9017195701599121,
+                  0,
+                  -2.348403215408325,
+                  -3.800490140914917,
+                  -0.9319644570350647,
+                  -0.9319644570350647,
+                  -0.3743806779384613,
+                  -0.3743806779384613,
+                  -4.976095199584961,
+                  0,
+                  0,
+                  0,
+                  -0.5012117624282837,
+                  -0.7245128154754639,
+                  -0.055628493428230286,
+                  -2.848243236541748,
+                  -0.3943482041358948,
+                  -0.022635789588093758,
+                  -0.0023120734840631485,
+                  -0.19736818969249725,
+                  -2.1237337589263916,
+                  -2.1237337589263916,
+                  -2.1237337589263916,
+                  -2.585249900817871,
+                  -0.9613564014434814,
+                  -0.9613564014434814,
+                  -0.7533511519432068,
+                  -0.7533511519432068,
+                  -3.7431042194366455,
+                  3.7431004979318576
+                ],
+                [
+                  -3.5532939434051514,
+                  -3.5532939434051514,
+                  -3.5532939434051514,
+                  -1.5156264305114746,
+                  -1.8165464401245117,
+                  -0.7921442985534668,
+                  -2.1350104808807373,
+                  -0.7091421484947205,
+                  -0.7091421484947205,
+                  -2.3688607215881348,
+                  -1.1844335794448853,
+                  -2.5147736072540283,
+                  0,
+                  -0.3039126396179199,
+                  0,
+                  -1.1844336986541748,
+                  10.732409477233887,
+                  7.418996810913086,
+                  4.105566024780273,
+                  10.732422828674316,
+                  3.313422918319702,
+                  1.9132872819900513,
+                  4.4095659255981445,
+                  4.4095659255981445,
+                  10.732421875,
+                  0.8274661898612976,
+                  0.8274661898612976,
+                  -0.8627776503562927,
+                  -1.1300987005233765,
+                  -3.581023693084717,
+                  -0.9114094972610474,
+                  -0.9114094972610474,
+                  -3.5532939434051514,
+                  -0.6118053197860718,
+                  -1.681441068649292,
+                  -0.6130027174949646,
+                  -0.4640016555786133,
+                  -0.28929099440574646,
+                  -0.0936029851436615,
+                  -0.4630281627178192,
+                  -0.41821831464767456,
+                  -0.41821831464767456,
+                  -0.7366766929626465,
+                  -1.5133090019226074,
+                  -0.7625496983528137,
+                  -0.567255973815918,
+                  -0.7586683034896851,
+                  -0.16738395392894745,
+                  -0.24428050220012665,
+                  -1.9695237874984741,
+                  -3.5532939434051514,
+                  -0.43268686532974243,
+                  -0.43268686532974243,
+                  -0.019571591168642044,
+                  -0.019571591168642044,
+                  -0.09252940118312836,
+                  -0.23974362015724182,
+                  -0.23974362015724182,
+                  -0.23974362015724182,
+                  -1.0197023153305054,
+                  -1.0197023153305054,
+                  -0.3092156946659088,
+                  -1.281044363975525,
+                  -0.26630470156669617,
+                  -0.2050807625055313,
+                  -0.17660962045192719,
+                  0,
+                  -0.25393152236938477,
+                  -0.25393152236938477,
+                  -0.25393152236938477,
+                  -1.4350898265838623,
+                  -1.0180323123931885,
+                  -1.0942505598068237,
+                  -1.4759846925735474,
+                  -1.4759846925735474,
+                  -3.5532939434051514,
+                  3.5532946621426285
+                ],
+                [
+                  -1.8531761169433594,
+                  -1.8531758785247803,
+                  -1.8531756401062012,
+                  -1.7370392084121704,
+                  -1.7163385152816772,
+                  -0.000050407332309987396,
+                  1.2975003719329834,
+                  -1.5753310918807983,
+                  -1.5753310918807983,
+                  -1.2363139390945435,
+                  -0.6190679669380188,
+                  -2.2596750259399414,
+                  -0.8909875154495239,
+                  -0.9590377807617188,
+                  -0.4545857310295105,
+                  -0.6168628334999084,
+                  -1.853175163269043,
+                  -1.5095630884170532,
+                  -1.1495376825332642,
+                  -1.8531749248504639,
+                  -0.3436132073402405,
+                  -0.8976110816001892,
+                  -0.4777826964855194,
+                  -0.4777826964855194,
+                  -1.8531746864318848,
+                  -0.3971394896507263,
+                  -0.3971394896507263,
+                  -0.9892560839653015,
+                  0.00003652569648693316,
+                  12.432578086853027,
+                  5.567525386810303,
+                  5.567525386810303,
+                  12.432546615600586,
+                  -0.4933503270149231,
+                  -1.4935672283172607,
+                  -0.5222812294960022,
+                  -1.3279569149017334,
+                  -0.49608761072158813,
+                  -0.08334539830684662,
+                  -0.4466482400894165,
+                  -0.21893438696861267,
+                  -0.21893438696861267,
+                  -0.42673036456108093,
+                  -0.9131196737289429,
+                  -0.4505777359008789,
+                  -0.47416746616363525,
+                  -0.5395820140838623,
+                  -0.0440693199634552,
+                  -0.0867731124162674,
+                  -1.2159082889556885,
+                  -1.8531765937805176,
+                  -0.0627022534608841,
+                  -0.0627022534608841,
+                  -0.16159968078136444,
+                  -0.16159968078136444,
+                  -0.5764746069908142,
+                  -0.040854185819625854,
+                  -0.040854185819625854,
+                  -0.040854185819625854,
+                  -0.32241442799568176,
+                  -0.32241442799568176,
+                  -0.09627986699342728,
+                  -0.4711224138736725,
+                  -0.06836897134780884,
+                  -0.0491793155670166,
+                  -0.016803743317723274,
+                  0,
+                  -0.1351580023765564,
+                  -0.1351580023765564,
+                  -0.1351580023765564,
+                  -1.5566729307174683,
+                  -0.7882740497589111,
+                  -1.0386641025543213,
+                  -0.07151106745004654,
+                  -0.07151106745004654,
+                  -1.853176236152649,
+                  1.8531615604720166
+                ],
+                [
+                  -0.17794381082057953,
+                  -0.17182104289531708,
+                  -0.1659027338027954,
+                  -4.9898858070373535,
+                  5.737621784210205,
+                  -0.891438364982605,
+                  0.5086624622344971,
+                  -0.32618293166160583,
+                  -0.32618293166160583,
+                  -0.11014562100172043,
+                  -0.05844921991229057,
+                  2.328129768371582,
+                  -3.0892789363861084,
+                  -0.2801649570465088,
+                  0,
+                  -0.03613583371043205,
+                  -0.18011675775051117,
+                  -0.4016484320163727,
+                  -0.38767877221107483,
+                  -0.14370323717594147,
+                  -0.006044325418770313,
+                  -1.275584101676941,
+                  0,
+                  0,
+                  -0.14370320737361908,
+                  -0.1368529051542282,
+                  -0.1368529051542282,
+                  -0.7013459801673889,
+                  -0.253413587808609,
+                  -0.5729459524154663,
+                  -0.32618293166160583,
+                  -0.32618293166160583,
+                  -0.14370320737361908,
+                  1.6775389909744263,
+                  5.290161609649658,
+                  4.0056633949279785,
+                  4.252015590667725,
+                  7.053203582763672,
+                  4.398717403411865,
+                  4.005663871765137,
+                  -0.1990806758403778,
+                  -0.1990806758403778,
+                  -0.3058195412158966,
+                  -0.7090827822685242,
+                  -0.34020745754241943,
+                  -0.21099849045276642,
+                  -0.30933240056037903,
+                  -0.051899492740631104,
+                  -0.05755810812115669,
+                  -0.8682149648666382,
+                  -2.787142753601074,
+                  -0.035049062222242355,
+                  -0.035049062222242355,
+                  -2.243607521057129,
+                  -2.243607521057129,
+                  -0.521136999130249,
+                  -0.012271980755031109,
+                  -0.012271980755031109,
+                  -0.012271980755031109,
+                  -0.2015918791294098,
+                  -0.2015918791294098,
+                  -0.05013042315840721,
+                  -0.23237885534763336,
+                  -0.036922886967659,
+                  -0.022075533866882324,
+                  -0.009868985041975975,
+                  0,
+                  -0.012585091404616833,
+                  -0.012585091404616833,
+                  -0.012585091404616833,
+                  -0.9955959320068359,
+                  -0.36344870924949646,
+                  -0.6107465028762817,
+                  -1.0377304553985596,
+                  -1.0377304553985596,
+                  -0.19211611151695251,
+                  0.1437036569900145
+                ],
+                [
+                  -0.18453377485275269,
+                  -0.1782427728176117,
+                  -0.17215919494628906,
+                  -0.28212282061576843,
+                  -0.1552858054637909,
+                  -0.772908091545105,
+                  -0.6939463019371033,
+                  -0.014103499241173267,
+                  -0.014103499241173267,
+                  -0.2118086814880371,
+                  -0.09719570726156235,
+                  -0.20736485719680786,
+                  -0.0024209090042859316,
+                  -0.0840318500995636,
+                  -0.04825848340988159,
+                  -0.08475598692893982,
+                  -0.5168317556381226,
+                  -0.13661417365074158,
+                  -0.0283522866666317,
+                  -0.15528003871440887,
+                  -0.09741263836622238,
+                  -0.49134281277656555,
+                  -0.009247525595128536,
+                  -0.009247525595128536,
+                  -0.15124936401844025,
+                  -0.4082406759262085,
+                  -0.4082406759262085,
+                  1.9028894901275635,
+                  -0.003975535277277231,
+                  -0.14656445384025574,
+                  0,
+                  0,
+                  -0.1461319625377655,
+                  -0.014890596270561218,
+                  0,
+                  0,
+                  -0.5145557522773743,
+                  0,
+                  -0.014890596270561218,
+                  0,
+                  1.5262372493743896,
+                  1.5262372493743896,
+                  3.155449151992798,
+                  6.310892105102539,
+                  3.155449151992798,
+                  2.0980019569396973,
+                  2.5752382278442383,
+                  0.47723621129989624,
+                  2.209425687789917,
+                  0.5609261393547058,
+                  -1.6323034763336182,
+                  -0.4970436096191406,
+                  -0.4970436096191406,
+                  -0.06850633025169373,
+                  -0.06850633025169373,
+                  -0.3861064016819,
+                  -0.34573474526405334,
+                  -0.34573474526405334,
+                  -0.34573474526405334,
+                  -0.3918926417827606,
+                  -1.0818856954574585,
+                  -0.08674325793981552,
+                  -1.174290418624878,
+                  -0.10641831904649734,
+                  -0.2554342448711395,
+                  -0.0173320434987545,
+                  -0.33006909489631653,
+                  -0.041290923953056335,
+                  -0.041290923953056335,
+                  -0.041290923953056335,
+                  -0.13742639124393463,
+                  -0.07280460745096207,
+                  -0.09615974873304367,
+                  -0.038781970739364624,
+                  -0.038781970739364624,
+                  -0.19172851741313934,
+                  0.14613206118018687
+                ],
+                [
+                  -5.702880859375,
+                  -5.695937633514404,
+                  -5.68898344039917,
+                  -0.2713446319103241,
+                  -2.3463847637176514,
+                  -3.2651755809783936,
+                  -2.3991479873657227,
+                  -1.720400333404541,
+                  -1.720400333404541,
+                  -3.877434730529785,
+                  -1.9403067827224731,
+                  -2.8802993297576904,
+                  -0.6730021238327026,
+                  -1.653381586074829,
+                  -1.5753064155578613,
+                  -1.932692289352417,
+                  -5.674874782562256,
+                  -2.8883485794067383,
+                  -0.0059363264590501785,
+                  -5.66788911819458,
+                  -2.8764758110046387,
+                  -2.5732080936431885,
+                  -1.6155344247817993,
+                  -1.6155344247817993,
+                  -5.655340194702148,
+                  -0.2114400863647461,
+                  -0.2114400863647461,
+                  -0.19516582787036896,
+                  0,
+                  -5.648324966430664,
+                  -1.7187799215316772,
+                  -1.7187799215316772,
+                  -5.639688014984131,
+                  -0.2991849482059479,
+                  -0.14549367129802704,
+                  -0.06310943514108658,
+                  3.3412139415740967,
+                  -3.894571542739868,
+                  -0.2727034091949463,
+                  -0.05479096621274948,
+                  -0.7162829041481018,
+                  -0.7162829041481018,
+                  -1.3180515766143799,
+                  -2.6377980709075928,
+                  -1.318488597869873,
+                  -0.5941883325576782,
+                  -1.2597383260726929,
+                  -0.6654051542282104,
+                  -0.6565502285957336,
+                  -1.004721760749817,
+                  5.561045169830322,
+                  1.5844485759735107,
+                  1.5844485759735107,
+                  2.258087158203125,
+                  2.258087158203125,
+                  4.964274883270264,
+                  1.3552199602127075,
+                  1.3552199602127075,
+                  1.3552199602127075,
+                  -0.622868001461029,
+                  -1.5220102071762085,
+                  -0.11558764427900314,
+                  -2.587095260620117,
+                  -0.20231546461582184,
+                  -0.36655670404434204,
+                  -0.03346538916230202,
+                  -0.40829887986183167,
+                  -1.0020757913589478,
+                  -1.0020757913589478,
+                  -1.0020757913589478,
+                  -0.9385048747062683,
+                  -0.8207464218139648,
+                  -0.8604296445846558,
+                  -0.22025468945503235,
+                  -0.22025468945503235,
+                  -5.72336483001709,
+                  5.906301767275268
+                ],
+                [
+                  -0.09666473418474197,
+                  -0.09271548688411713,
+                  -0.08892747759819031,
+                  0.010792613960802555,
+                  -0.2502696216106415,
+                  -1.2642148733139038,
+                  -0.8214194774627686,
+                  -0.048262935131788254,
+                  -0.048262935131788254,
+                  -0.15937578678131104,
+                  -0.07315266132354736,
+                  -0.5318127274513245,
+                  -0.03464222326874733,
+                  -0.7238402962684631,
+                  -0.26382914185523987,
+                  -0.0576118603348732,
+                  -0.08496484905481339,
+                  -0.059380751103162766,
+                  -0.0012239963980391622,
+                  -0.06134936586022377,
+                  -0.057238757610321045,
+                  -0.04915596544742584,
+                  -0.40881529450416565,
+                  -0.40881529450416565,
+                  -0.04559041187167168,
+                  -0.008435108698904514,
+                  -0.008435108698904514,
+                  0.8443567156791687,
+                  0,
+                  -0.043212857097387314,
+                  -0.01605488359928131,
+                  -0.01605488359928131,
+                  -0.04046657681465149,
+                  -0.0076459054835140705,
+                  0,
+                  0,
+                  -0.3371102213859558,
+                  0,
+                  -0.0076459054835140705,
+                  0,
+                  -0.23341917991638184,
+                  -0.23341917991638184,
+                  -0.6731352210044861,
+                  -1.3462718725204468,
+                  -0.6731179356575012,
+                  -0.002421207958832383,
+                  -0.2012452781200409,
+                  -0.19655418395996094,
+                  -0.7582048773765564,
+                  1.9053691625595093,
+                  -1.0721776485443115,
+                  -0.36618131399154663,
+                  -0.36618131399154663,
+                  0,
+                  0,
+                  -0.3371102213859558,
+                  -0.5684574842453003,
+                  -0.5684574842453003,
+                  -0.5684574842453003,
+                  0.9099776744842529,
+                  4.066546440124512,
+                  0.8130863308906555,
+                  6.611551284790039,
+                  0.8065450191497803,
+                  0.8159159421920776,
+                  0.8118072152137756,
+                  0.8192413449287415,
+                  2.5449843406677246,
+                  2.5449843406677246,
+                  2.5449843406677246,
+                  -0.9023736119270325,
+                  -0.08786385506391525,
+                  -0.4219112992286682,
+                  -0.41931843757629395,
+                  -0.41931843757629395,
+                  -0.11231249570846558,
+                  0.028177536660211756
+                ],
+                [
+                  -1.208577275276184,
+                  -1.2084505558013916,
+                  -1.2084133625030518,
+                  -1.3564177751541138,
+                  -2.078439235687256,
+                  1.0366886854171753,
+                  -2.372389793395996,
+                  -0.18723741173744202,
+                  -0.18723741173744202,
+                  -0.8155586123466492,
+                  -0.4194943904876709,
+                  2.059140920639038,
+                  -1.0057793855667114,
+                  3.1112406253814697,
+                  -0.5908343195915222,
+                  -0.3957144320011139,
+                  -1.2084072828292847,
+                  -1.27276611328125,
+                  -1.1158822774887085,
+                  -1.208400845527649,
+                  -0.12450622022151947,
+                  1.6640008687973022,
+                  -1.4410147666931152,
+                  -1.4410147666931152,
+                  -1.208400845527649,
+                  -0.4362497925758362,
+                  -0.4362497925758362,
+                  -1.5131205320358276,
+                  -0.76371169090271,
+                  -2.245089054107666,
+                  -0.015268905088305473,
+                  -0.015268905088305473,
+                  -1.2084007263183594,
+                  -1.0917352437973022,
+                  -1.2134898900985718,
+                  -0.12918013334274292,
+                  -0.5158401727676392,
+                  -0.43165987730026245,
+                  -0.09736794978380203,
+                  -0.0442662313580513,
+                  -0.0013440243201330304,
+                  -0.0013440243201330304,
+                  -0.38031530380249023,
+                  -0.7547450661659241,
+                  -0.3743378221988678,
+                  -0.054459042847156525,
+                  -0.054459042847156525,
+                  0,
+                  -0.6841222047805786,
+                  2.1160693168640137,
+                  -1.2084007263183594,
+                  0,
+                  0,
+                  -0.07667022198438644,
+                  -0.07667022198438644,
+                  0,
+                  -0.3231980502605438,
+                  -0.3231980502605438,
+                  -0.3231980502605438,
+                  -1.5716331005096436,
+                  -1.5716331005096436,
+                  -0.5110823512077332,
+                  -1.5716331005096436,
+                  -0.4230266809463501,
+                  -0.32100558280944824,
+                  -0.2752183973789215,
+                  0,
+                  0,
+                  0,
+                  0,
+                  6.813311576843262,
+                  2.11606502532959,
+                  3.111246109008789,
+                  4.677085876464844,
+                  4.677085876464844,
+                  13.07730770111084,
+                  1.2084016923789638
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "Hey"
+      ],
+      [
+        "en",
+        "Hello"
+      ],
+      [
+        "en",
+        "Hi"
+      ],
+      [
+        "en",
+        "How are you"
+      ],
+      [
+        "en",
+        "Is anyone there"
+      ],
+      [
+        "en",
+        "Good day"
+      ],
+      [
+        "en",
+        "What's up"
+      ],
+      [
+        "en",
+        "How is it going"
+      ],
+      [
+        "en",
+        "good atfernoon"
+      ],
+      [
+        "en",
+        "Bye"
+      ],
+      [
+        "en",
+        "See you later"
+      ],
+      [
+        "en",
+        "Goodbye"
+      ],
+      [
+        "en",
+        "See ya"
+      ],
+      [
+        "en",
+        "I am leaving"
+      ],
+      [
+        "en",
+        "Adios"
+      ],
+      [
+        "en",
+        "Nice chatting to you, bye"
+      ],
+      [
+        "en",
+        "OK thank you"
+      ],
+      [
+        "en",
+        "Thanks"
+      ],
+      [
+        "en",
+        "Thank you"
+      ],
+      [
+        "en",
+        "That's helpful"
+      ],
+      [
+        "en",
+        "Great"
+      ],
+      [
+        "en",
+        "What hours are you open"
+      ],
+      [
+        "en",
+        "Are you open today"
+      ],
+      [
+        "en",
+        "what is the schedule"
+      ],
+      [
+        "en",
+        "What are your hours"
+      ],
+      [
+        "en",
+        "When are you open"
+      ],
+      [
+        "en",
+        "How to renew my credit card"
+      ],
+      [
+        "en",
+        "How to renew my debit card"
+      ],
+      [
+        "en",
+        "Application for debit card"
+      ],
+      [
+        "en",
+        "Application for credit card"
+      ],
+      [
+        "en",
+        "How to apply for debit card"
+      ],
+      [
+        "en",
+        "How to apply for credit card"
+      ],
+      [
+        "en",
+        "Process to get credit card"
+      ],
+      [
+        "en",
+        "Process to get debit card"
+      ],
+      [
+        "en",
+        "stocks"
+      ],
+      [
+        "en",
+        "How to invest in stocks"
+      ],
+      [
+        "en",
+        "What is the rate of stocks"
+      ],
+      [
+        "en",
+        "How is the stock market"
+      ],
+      [
+        "en",
+        "Where to get information related to stocks"
+      ],
+      [
+        "en",
+        "How is the market"
+      ],
+      [
+        "en",
+        "Can I get a house loan"
+      ],
+      [
+        "en",
+        "Can I get a personal loan"
+      ],
+      [
+        "en",
+        "Can I get a car loan"
+      ],
+      [
+        "en",
+        "Can I get a home loan"
+      ],
+      [
+        "en",
+        "How to get a vehicle loan"
+      ],
+      [
+        "en",
+        "How can I get a personal loan"
+      ],
+      [
+        "en",
+        "How to get a car loan"
+      ],
+      [
+        "en",
+        "How does these loans work"
+      ],
+      [
+        "en",
+        "Do you understand me"
+      ],
+      [
+        "en",
+        "Know what I mean"
+      ],
+      [
+        "en",
+        "Do you get it"
+      ],
+      [
+        "en",
+        "Understood"
+      ],
+      [
+        "en",
+        "Do you get me"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "greeting": [
+          {
+            "answer": "Hello"
+          },
+          {
+            "answer": "Hey"
+          },
+          {
+            "answer": "What can I do for you"
+          },
+          {
+            "answer": "Hi there, how can I help?"
+          }
+        ],
+        "goodbye": [
+          {
+            "answer": "See you later, thanks for visiting"
+          },
+          {
+            "answer": "Have a nice day"
+          },
+          {
+            "answer": "Bye! Come back again soon."
+          }
+        ],
+        "thanks": [
+          {
+            "answer": "Happy to help!"
+          },
+          {
+            "answer": "Any time!"
+          },
+          {
+            "answer": "My pleasure"
+          }
+        ],
+        "hours": [
+          {
+            "answer": "We're open every day 9am-9pm"
+          },
+          {
+            "answer": "Our hours are 9am-9pm every day"
+          }
+        ],
+        "cards": [
+          {
+            "answer": "For query relating to credit/debit cards, please refer to our official website"
+          },
+          {
+            "answer": "For credit/debit card problems, please refer to our official website"
+          }
+        ],
+        "stocks": [
+          {
+            "answer": "For information related to stocks and market, please refer to our official website"
+          }
+        ],
+        "loans": [
+          {
+            "answer": "We provide loans at lowest interest. For more details, please refer to our official website."
+          }
+        ],
+        "understand": [
+          {
+            "answer": "I read you loud and clear"
+          },
+          {
+            "answer": "I do indeed"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
